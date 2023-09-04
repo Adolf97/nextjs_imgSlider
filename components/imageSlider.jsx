@@ -34,7 +34,7 @@ export default function ImageSlider() {
   return (
     <div className='text-2xl font-semibold'>
       <div className="relative m-auto mb-3 w-[1000px] h-[400px]">
-        <img className="h-full w-full object-cover" src={imgArr[img].url} alt="fotos" />
+        <img className="h-full w-full object-cover" src={imgArr[img].url} alt={imgArr[img].name} />
 
         <button onClick={goToPrevious} className='absolute h-full bg-slate-100/40 border-none px-3 top-1/2 translate-y-[-50%] left-0 text-black text-[50px]'>&#60;</button>
         <button onClick={goToNext} className='absolute h-full bg-slate-100/40 border-none px-3 top-1/2 translate-y-[-50%] right-0 text-black text-[50px]'>&#62;</button>
